@@ -5,33 +5,23 @@ export default function RepetitionExercise({ name, onBack }) {
 
   return (
     <div>
+      <button className="controlButton backButton" onClick={onBack}>
+        Back
+      </button>
+
       <h2>{name}</h2>
 
       <div className="repDisplay">{count}</div>
 
       <div className="buttonRow">
-        <button
-          className="controlButton"
-          onClick={() => setCount(count + 1)}
-        >
+        <button className="controlButton" onClick={() => setCount((c) => c + 1)}>
           +1 reps
         </button>
 
-        <button
-          className="controlButton"
-          onClick={() => setCount(0)}
-        >
+        <button className="controlButton" onClick={() => setCount(0)}>
           Reset
         </button>
       </div>
-
-      <button
-        className="controlButton backButton"
-        onClick={onBack}
-        style={{ marginTop: "20px" }}
-      >
-        Back
-      </button>
     </div>
   );
 }

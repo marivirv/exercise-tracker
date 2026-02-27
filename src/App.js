@@ -5,29 +5,26 @@ import RepetitionExercise from "./components/RepetitionExercise";
 import DurationExercise from "./components/DurationExercise";
 
 const EXERCISES = [
-  { id: 1, name: "Push Ups", type: "repetition" },
-  { id: 2, name: "Running", type: "duration" },
+  { id: 1, name: "Running", type: "duration" },
+  { id: 2, name: "Push Ups", type: "repetition" },
   { id: 3, name: "Plank", type: "duration" },
-  { id: 4, name: "Delt Flys", type: "repetition" }
+  { id: 4, name: "Delt Flys", type: "repetition" },
 ];
 
 export default function App() {
   const [selectedExercise, setSelectedExercise] = useState(null);
 
-  const handleBack = () => {
-    setSelectedExercise(null);
-  };
+  const handleBack = () => setSelectedExercise(null);
 
   let screen = (
     <div>
-      <h1>Exercise Tracker</h1>
-      <p>Choose an exercise:</p>
+      <h1>Exercises</h1>
 
       {EXERCISES.map((ex) => (
         <button
           key={ex.id}
-          onClick={() => setSelectedExercise(ex)}
           className="exerciseButton"
+          onClick={() => setSelectedExercise(ex)}
         >
           {ex.name}
         </button>
@@ -38,17 +35,11 @@ export default function App() {
   if (selectedExercise) {
     if (selectedExercise.type === "repetition") {
       screen = (
-        <RepetitionExercise
-          name={selectedExercise.name}
-          onBack={handleBack}
-        />
+        <RepetitionExercise name={selectedExercise.name} onBack={handleBack} />
       );
     } else {
       screen = (
-        <DurationExercise
-          name={selectedExercise.name}
-          onBack={handleBack}
-        />
+        <DurationExercise name={selectedExercise.name} onBack={handleBack} />
       );
     }
   }
