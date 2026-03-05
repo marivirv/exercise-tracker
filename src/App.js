@@ -3,9 +3,10 @@ import "./App.css";
 
 import RepetitionExercise from "./components/RepetitionExercise";
 import DurationExercise from "./components/DurationExercise";
+import RunningExercise from "./components/RunningExercise";
 
 const EXERCISES = [
-  { id: 1, name: "Running", type: "duration" },
+  { id: 1, name: "Running", type: "running" }, // NEW TYPE
   { id: 2, name: "Push Ups", type: "repetition" },
   { id: 3, name: "Plank", type: "duration" },
   { id: 4, name: "Delt Flys", type: "repetition" },
@@ -37,9 +38,13 @@ export default function App() {
       screen = (
         <RepetitionExercise name={selectedExercise.name} onBack={handleBack} />
       );
-    } else {
+    } else if (selectedExercise.type === "duration") {
       screen = (
         <DurationExercise name={selectedExercise.name} onBack={handleBack} />
+      );
+    } else if (selectedExercise.type === "running") {
+      screen = (
+        <RunningExercise name={selectedExercise.name} onBack={handleBack} />
       );
     }
   }
