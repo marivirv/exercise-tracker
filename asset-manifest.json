@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/https//marivirv.github.io/exercise-tracker/static/css/main.ae3bcba8.css",
-    "main.js": "/https//marivirv.github.io/exercise-tracker/static/js/main.19379006.js",
-    "static/js/453.716317c4.chunk.js": "/https//marivirv.github.io/exercise-tracker/static/js/453.716317c4.chunk.js",
-    "index.html": "/https//marivirv.github.io/exercise-tracker/index.html",
-    "main.ae3bcba8.css.map": "/https//marivirv.github.io/exercise-tracker/static/css/main.ae3bcba8.css.map",
-    "main.19379006.js.map": "/https//marivirv.github.io/exercise-tracker/static/js/main.19379006.js.map",
-    "453.716317c4.chunk.js.map": "/https//marivirv.github.io/exercise-tracker/static/js/453.716317c4.chunk.js.map"
+    "main.css": "/exercise-tracker/static/css/main.ae3bcba8.css",
+    "main.js": "/exercise-tracker/static/js/main.e30f58be.js",
+    "static/js/453.716317c4.chunk.js": "/exercise-tracker/static/js/453.716317c4.chunk.js",
+    "index.html": "/exercise-tracker/index.html",
+    "main.ae3bcba8.css.map": "/exercise-tracker/static/css/main.ae3bcba8.css.map",
+    "main.e30f58be.js.map": "/exercise-tracker/static/js/main.e30f58be.js.map",
+    "453.716317c4.chunk.js.map": "/exercise-tracker/static/js/453.716317c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae3bcba8.css",
-    "static/js/main.19379006.js"
+    "static/js/main.e30f58be.js"
   ]
 }
